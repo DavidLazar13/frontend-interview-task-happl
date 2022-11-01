@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders as expected 1`] = `
+<div>
+  <div
+    class="bg-green-400 flex fixed items-center md:items-stretch md:flex-col md:w-72 h-16 md:h-screen md:inset-y-0 inset-x-0 md:space-y-4 space-x-3 md:space-x-0 px-3 py-3 md:py-4"
+  >
+    <div
+      class="flex items-center space-x-2"
+    >
+      <div
+        class="rounded-md overflow-hidden"
+      >
+        <svgr-url
+          data-testid="icon-logo"
+          height="33"
+          strokewidth="1.5"
+          width="33"
+        />
+      </div>
+      <p
+        class="hidden md:flex text-sm text-white"
+      >
+        Happl
+      </p>
+    </div>
+    <nav>
+      <a
+        class="flex items-center h-9 px-2 rounded-md text-sm text-white hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-300 bg-green-500"
+        href="/"
+      >
+        <span
+          class="mr-2"
+        >
+          <svgr-url
+            data-testid="icon-home"
+            height="20"
+            strokewidth="1.5"
+            width="20"
+          />
+        </span>
+        Home
+      </a>
+    </nav>
+  </div>
+  <div
+    class="md:pl-72 pt-16 md:pt-0 flex flex-col flex-1"
+  >
+    <main
+      class="flex-1"
+    >
+      <p>
+        Children
+      </p>
+    </main>
+  </div>
+</div>
+`;

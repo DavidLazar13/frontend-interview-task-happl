@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon renders as expected 1`] = `
+<div>
+  <svgr-url
+    data-testid="icon-logo"
+    height="20"
+    strokewidth="1.5"
+    width="20"
+  />
+</div>
+`;

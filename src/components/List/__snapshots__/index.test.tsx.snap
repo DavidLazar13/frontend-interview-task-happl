@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders as expected 1`] = `
+<div>
+  <div>
+    <h2>
+      Allowances
+    </h2>
+    <div />
+  </div>
+</div>
+`;

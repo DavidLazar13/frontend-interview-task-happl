@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Learning & Development",
+    "renewal": "month",
+    "currency": "£",
+    "amount": "100",
+    "spent": "20",
+    "active": true,
+    "type": "expense"
+  },
+  {
+    "id": 2,
+    "name": "Wellbeing",
+    "renewal": "month",
+    "currency": "£",
+    "amount": "150",
+    "spent": "140",
+    "active": true,
+    "type": "card"
+  },
+  {
+    "id": 3,
+    "name": "WFH",
+    "renewal": "year",
+    "currency": "£",
+    "amount": "1000",
+    "spent": "800",
+    "active": true,
+    "type": "card"
+  },
+  {
+    "id": 4,
+    "name": "Lunch",
+    "renewal": "week",
+    "currency": "£",
+    "amount": "15",
+    "spent": "0",
+    "active": false,
+    "type": "card"
+  },
+  {
+    "id": 5,
+    "name": "Team Day",
+    "renewal": "year",
+    "currency": "£",
+    "amount": "200",
+    "spent": "0",
+    "active": false,
+    "type": "card"
+  },
+  {
+    "id": 6,
+    "name": "Birthday",
+    "renewal": "year",
+    "currency": "£",
+    "amount": "100",
+    "spent": "100",
+    "active": true,
+    "type": "card"
+  },
+  {
+    "id": 7,
+    "name": "Software",
+    "renewal": "month",
+    "currency": "£",
+    "amount": "30",
+    "spent": "8.99",
+    "active": true,
+    "type": "card"
+  },
+  {
+    "id": 8,
+    "name": "Team Budget",
+    "renewal": "year",
+    "currency": "£",
+    "amount": "400",
+    "spent": "125",
+    "active": true,
+    "type": "card"
+  }
+]
