@@ -8,7 +8,7 @@ interface CardFooterProps {
 }
 
 const CardFooter = ({allowance}: CardFooterProps) => {
-        if (allowance.active) {
+        if (!allowance.active) {
            return(
                <div>
                    <Activate />
