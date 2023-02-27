@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card = ({allowance}: CardProps) => {
     return (
-        <div className='border mb-5'>
+        <div className='border'>
             <h3 className=''>{allowance.name}</h3>
             <h4 className=''>{allowance.type}</h4>
             <CardFooter allowance={allowance}/>

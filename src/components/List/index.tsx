@@ -16,9 +16,9 @@ const List = () => {
   }, [])
 
   return (
-    <div>
-      <h2>Allowances</h2>
-      <div>
+    <div className='m-8'>
+      <h2 className='text-2xl font-semibold leading-5'>Allowances</h2>
+      <div className='grid grid-rows-3 grid-flow-col gap-4 mt-7'>
         {allowances.map((allowance) => (
           <Card key={allowance.id} allowance={allowance}></Card>
         ))}
