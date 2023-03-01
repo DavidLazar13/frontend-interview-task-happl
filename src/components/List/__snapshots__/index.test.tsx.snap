@@ -2,11 +2,17 @@
 
 exports[`List renders as expected 1`] = `
 <div>
-  <div>
-    <h2>
+  <div
+    class="m-8"
+  >
+    <h2
+      class="text-2xl font-semibold leading-5 text-green-400"
+    >
       Allowances
     </h2>
-    <div />
+    <div
+      class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-7"
+    />
   </div>
 </div>
 `;
