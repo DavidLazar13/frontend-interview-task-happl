@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import { Allowance } from '@/types/allowances'
 import CardFooter from '@/components/Card/CardFooter'
+
 interface CardProps {
     allowance: Allowance
 }

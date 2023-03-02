@@ -8,19 +8,19 @@ interface CardFooterProps {
 }
 
 const CardFooter = ({allowance}: CardFooterProps) => {
-        if (!allowance.active) {
-           return(
-               <div data-testid="activate-section">
-                   <Activate />
-               </div>
-           )
-        } else {
-            return(
-                <div data-testid="percentage-section">
-                    <Percentage allowance={allowance} />
-                </div>
-            )
-        }
+        return (
+            <>{
+                allowance.active ? (
+                    <div data-testid="percentage-section">
+                        <Percentage allowance={allowance} />
+                    </div>
+                ) : (
+                    <div data-testid="activate-section">
+                        <Activate />
+                    </div>
+                )
+            }</>
+        )
 }
 
 export default CardFooter;
