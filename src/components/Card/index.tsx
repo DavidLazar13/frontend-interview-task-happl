@@ -1,12 +1,16 @@
 import React from "react";
 import { Allowance } from '@/types/allowances'
 import Percentage from "@/components/Card/Percentage";
+import {calculatePercentage} from "../../../utils/calculatePercentage";
 
 interface CardProps {
     allowance: Allowance
 }
 
 const Card = ({allowance}: CardProps) => {
+
+    const percentage = calculatePercentage(+allowance.spent, +allowance.amount)
+
     return (
         <div className='relative border rounded-lg shadow-sm' data-testid={`card-${allowance.id}`}>
             <div className='px-6 pt-5 mb-12 pb-1.5'>
@@ -16,7 +20,7 @@ const Card = ({allowance}: CardProps) => {
             <>{
                 allowance.active ? (
                     <div data-testid="percentage-section">
-                        <Percentage allowance={allowance} />
+                        <Percentage percentage={percentage} amount={allowance.amount} currency={allowance.currency} />
                     </div>
                 ) : (
                     <div data-testid="activate-section">

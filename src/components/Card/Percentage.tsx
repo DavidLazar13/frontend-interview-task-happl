@@ -1,25 +1,13 @@
-import React, {useState, useEffect} from "react";
-import { Allowance } from '@/types/allowances'
+import React from "react";
+
 
 interface PercentageProps {
-    allowance: Allowance
+    percentage: number
+    currency: string
+    amount: string
 }
 
-const Percentage = ({allowance}:PercentageProps) => {
-    const [percentage, setPercentage] = useState<number>(0)
-
-    const calculatePercentage = (allowance: Allowance) => {
-        return Math.trunc((+allowance.spent / +allowance.amount) * 100)
-    }
-
-    const updatePercentage = () => {
-        const percentage = calculatePercentage(allowance)
-        setPercentage(percentage)
-    }
-
-    useEffect(() => {
-           updatePercentage();
-    }, [allowance])
+const Percentage = ({percentage, currency, amount}:PercentageProps) => {
 
     return (
         <div className='pb-5 mx-6'>
@@ -28,8 +16,8 @@ const Percentage = ({allowance}:PercentageProps) => {
                     {percentage}% utilised
                 </div>
                 <div className='text-sm text-gray-300'>
-                    {allowance.currency}
-                    {allowance.amount} / Month
+                    {currency}
+                    {amount} / Month
                 </div>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-1 mt-1.5">
