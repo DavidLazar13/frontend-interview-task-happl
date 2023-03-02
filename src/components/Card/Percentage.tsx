@@ -1,13 +1,13 @@
 import React from "react";
 
 
-interface PercentageProps {
+type PercentageProps = {
     percentage: number
     currency: string
     amount: string
 }
 
-const Percentage = ({percentage, currency, amount}:PercentageProps) => {
+const Percentage = ({percentage, currency, amount}: PercentageProps) => {
 
     return (
         <div className='pb-5 mx-6'>

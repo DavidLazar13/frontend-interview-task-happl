@@ -3,7 +3,7 @@ import { Allowance } from '@/types/allowances'
 import Percentage from "@/components/Card/Percentage";
 import {calculatePercentage} from "../../../utils/calculatePercentage";
 
-interface CardProps {
+type CardProps = {
     allowance: Allowance
 }
 
