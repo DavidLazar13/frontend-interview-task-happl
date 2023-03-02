@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { Allowance } from '@/types/allowances'
 import Activate from '@/components/Card/Activate'
 import Percentage from '@/components/Card/Percentage'
