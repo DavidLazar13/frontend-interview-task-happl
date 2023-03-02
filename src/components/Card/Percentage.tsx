@@ -1,6 +1,5 @@
 import React from "react";
 
-
 type PercentageProps = {
     percentage: number
     currency: string

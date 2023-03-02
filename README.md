@@ -17,13 +17,13 @@ If you have any questions please feel free to email us.
 First, install the dependencies:
 
 ```bash
-yarn
+npm install
 ```
 
 To run the development server on [http://localhost:3000](http://localhost:3000):
 
 ```
-yarn dev
+npm run dev
 ```
 
 ### Tests
@@ -31,7 +31,7 @@ yarn dev
 To run the tests, use:
 
 ```
-yarn test
+npm test
 ```
 
 ### Typescript
@@ -39,7 +39,7 @@ yarn test
 To check for type errors, use:
 
 ```
-yarn tsc
+npm run type-check
 ```
 
 ### Lint
@@ -47,7 +47,7 @@ yarn tsc
 To run lint, use:
 
 ```
-yarn lint
+npm run lint
 ```
 
 ### Prettier
@@ -55,5 +55,5 @@ yarn lint
 To run prettier, use:
 
 ```
-yarn format
+npm run prettier
 ```
