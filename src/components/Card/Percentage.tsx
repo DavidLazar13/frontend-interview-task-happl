@@ -8,17 +8,17 @@ interface PercentageProps {
 const Percentage = ({allowance}:PercentageProps) => {
     const [percentage, setPercentage] = useState<number>(0)
 
-    const getPercentage = () => {
-        const percentage = Math.trunc((+allowance.spent / +allowance.amount) * 100)
+    const calculatePercentage = (allowance: Allowance) => {
+        return Math.trunc((+allowance.spent / +allowance.amount) * 100)
+    }
+
+    const updatePercentage = () => {
+        const percentage = calculatePercentage(allowance)
         setPercentage(percentage)
     }
 
-    const percentageStyle: React.CSSProperties = {
-        width: `${percentage}%`
-    }
-
     useEffect(() => {
-           getPercentage();
+           updatePercentage();
     }, [allowance])
 
     return (
@@ -33,7 +33,7 @@ const Percentage = ({allowance}:PercentageProps) => {
                 </div>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-1 mt-1.5">
-                <div className="bg-green-600 h-1 rounded-full" style={percentageStyle}></div>
+                <div className="bg-green-600 h-1 rounded-full" style={{width: `${percentage}%`}}></div>
             </div>
         </div>
     )

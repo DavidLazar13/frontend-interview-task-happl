@@ -15,6 +15,8 @@ describe('List', () => {
     await waitFor(() => expect(container).toMatchSnapshot())
   })
 
+  // I've covered this cases in Card component index.test.tsx
+
   it.skip('renders header as expected', async () => {})
 
   it.skip('renders list as expected', async () => {})
