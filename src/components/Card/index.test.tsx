@@ -1,8 +1,6 @@
 import {render, screen} from "@testing-library/react";
 import "@testing-library/jest-dom";
-
 import Card from "../../components/Card";
-import CardFooter from "../../components/Card/CardFooter";
 import {Allowance} from "@/types/allowances";
 
 describe('Card',()=> {
@@ -28,20 +26,20 @@ describe('Card',()=> {
     })
 })
 
-describe('CardFooter', () => {
+describe('Card', () => {
     describe('render activate footer', () => {
         it("if active is false", () => {
-            const allowance = {
+            const allowance: Allowance = {
                 id: 2,
                 name: "WFH",
                 renewal: "monthly",
                 currency: "£",
-                amount: 100,
+                amount: '100',
                 spent: "0",
                 active: false,
                 type: "expense",
             }
-            render(<CardFooter allowance={allowance}/>);
+            render(<Card allowance={allowance}/>);
 
             // DOM Query
             expect(
@@ -57,12 +55,12 @@ describe('CardFooter', () => {
                 name: "WFH",
                 renewal: "monthly",
                 currency: "£",
-                amount: 100,
+                amount: '100',
                 spent: "0",
                 active: true,
                 type: "expense",
             }
-            render(<CardFooter allowance={allowance}/>);
+            render(<Card allowance={allowance}/>);
 
             // DOM Query
             expect(
