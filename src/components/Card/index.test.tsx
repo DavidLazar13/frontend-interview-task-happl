@@ -3,16 +3,17 @@ import "@testing-library/jest-dom";
 
 import Card from "../../components/Card";
 import CardFooter from "../../components/Card/CardFooter";
+import {Allowance} from "@/types/allowances";
 
 describe('Card',()=> {
     describe('render component', () => {
         it("if props exist", () => {
-            const allowance = {
+            const allowance: Allowance= {
                 id: 2,
                 name: "WFH",
                 renewal: "monthly",
                 currency: "£",
-                amount: 100,
+                amount: '100',
                 spent: "0",
                 active: true,
                 type: "expense",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Allowance } from '@/types/allowances'
-import CardFooter from '@/components/Card/CardFooter'
+import Percentage from "@/components/Card/Percentage";
 
 interface CardProps {
     allowance: Allowance
@@ -13,7 +13,19 @@ const Card = ({allowance}: CardProps) => {
                 <h3 className='font-medium'>{allowance.name}</h3>
                 <h4 className='text-sm capitalize text-gray-400'>{allowance.type}</h4>
             </div>
-            <CardFooter allowance={allowance}/>
+            <>{
+                allowance.active ? (
+                    <div data-testid="percentage-section">
+                        <Percentage allowance={allowance} />
+                    </div>
+                ) : (
+                    <div data-testid="activate-section">
+                        <div className='absolute bg-gray-100 p-4 rounded-b-lg text-lime-500 text-sm bottom-0 inset-x-0 cursor-pointer'>
+                            Activate card
+                        </div>
+                    </div>
+                )
+            }</>
         </div>
     )
 }
